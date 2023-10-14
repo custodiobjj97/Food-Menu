@@ -1,0 +1,41 @@
+.category{
+    padding: 90px 12px;
+    max-width: 1600px;
+    width: 100%;
+    margin: auto;
+}
+
+.category h2{
+    color: var(--color-primary);
+    text-align: center;
+    font-size: 2.66rem;
+    margin-bottom: 1rem;
+}
+
+.group-category{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #ccc;
+    padding: 1rem;
+    border-radius: 5px;
+   
+}
+
+
+@media (min-width:920px){
+    .group-category{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        align-items: center;
+        gap: 30px;
+    }
+
+
+}
